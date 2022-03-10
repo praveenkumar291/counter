@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState("");
+  const [count, setCount] = useState(0);
   const increment = () => {
-    if (typeof count !== "NAN") {
+    if (count < 10) {
       setCount(Number(count) + 1);
-    } else setCount(1);
+    }
+  };
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
   return (
     <div>
       <h1>COUNTER APP</h1>
       <h4> COUNTER:{count}</h4>
-      <button onClick={increment}>Incre</button>
-      <button onClick={() => setCount(count - 1)}>Decrease</button>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
       <button onClick={() => setCount(0)}>Resect</button>
     </div>
   );
