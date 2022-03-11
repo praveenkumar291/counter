@@ -18,16 +18,19 @@ const Counter = () => {
   const updateMin = (e) => {
     setMin(Number(e.target.value));
     setCount(Number(e.target.value));
+    setMax(Number(e.target.value) + 1);
   };
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div>
         Min:{" "}
-        <input type="text" name="counter" onChange={updateMin} value={min} />
+        <input type="number" name="counter" placeholder="minvalue" onChange={updateMin} value={min} />
         Max:{" "}
         <input
-          type="text"
+          type="number"
           name="counter"
+          placeholder="maxvalue"
+          min={min + 1}
           onChange={(e) => setMax(e.target.value)}
           value={max}
         />
