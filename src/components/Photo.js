@@ -14,14 +14,19 @@ const Photo = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    if (count < data.length - 1) {
-      setCount(count + 1);
-    } else setCount(0);
+    // if (count < data.length - 1) {
+    //   setCount(count + 1);
+    // } else setCount(0);
+
+    count < data.length - 1 ? setCount(count + 1) : setCount(0);
   };
+
   const decrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    } else setCount(data.length - 1);
+    // if (count > 0) {
+    //   setCount(count - 1);
+    // } else setCount(data.length - 1);
+
+    count > 0 ? setCount(count - 1) : setCount(data.length - 1);
   };
   return (
     <div
