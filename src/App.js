@@ -1,10 +1,12 @@
 import React from 'react'
-import Counter from './components/Counter'
+import Cal from './components/Cal'
+// import Counter from './components/Counter'
 
 const App = () => {
   return (
     <div>
-      <Counter/>
+      {/* <Counter/> */}
+      <Cal/>
     </div>
   )
 }
