@@ -39,6 +39,7 @@ const Cal = () => {
           <button onClick={() => setInput(input + "-")}>-</button>
           <button onClick={() => setInput(input + "*")}>*</button>
           <button onClick={() => setInput(input + "/")}>/</button>
+
           <button onClick={() => setInput("")}>c</button>
         </center>
       </div>
