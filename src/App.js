@@ -1,6 +1,10 @@
-import React from 'react'
+import React from "react";
+import ImageSlider from "./components/Imageslider";
+import { SliderData } from "./components/SliderData";
+
+
 // import Cal from './components/Cal'
-import Photo from './components/Photo'
+// import Photo from './components/Photo'
 // import Counter from './components/Counter'
 
 const App = () => {
@@ -8,9 +12,11 @@ const App = () => {
     <div>
       {/* <Counter/> */}
       {/* <Cal/> */}
-      <Photo/>
+      {/* <Photo/> */}
+      <ImageSlider slides={SliderData}/>
+     
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

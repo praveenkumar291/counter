@@ -1,0 +1,30 @@
+export const SliderData = [
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/TajMahal-400x266.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/ChristTheRedeemer-400x243.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/GreatWallOfChina-400x266.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/PetraJordan-400x266.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/MachuPicchu-400x266.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/04/Chichen-Itza_23rd-oct-400x229.jpg",
+  },
+  {
+    image:
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/Colosseum-Rome-400x237.jpg",
+  },
+];
