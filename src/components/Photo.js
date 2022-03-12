@@ -28,6 +28,7 @@ const Photo = () => {
 
     count > 0 ? setCount(count - 1) : setCount(data.length - 1);
   };
+  
   return (
     <div
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
@@ -37,6 +38,14 @@ const Photo = () => {
         <button style={{ padding: "5px", margin: "10px" }} onClick={decrement}>
           Previous
         </button>
+        {data.map((item, i) => (
+          <button
+            style={{ padding: "5px", margin: "10px" }}
+            onClick={() => setCount(i)}
+          >
+            {i + 1}
+          </button>
+        ))}
         <button style={{ padding: "5px", margin: "10px" }} onClick={increment}>
           Next
         </button>
