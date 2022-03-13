@@ -1,7 +1,7 @@
 import React from "react";
-import ImageSlider from "./components/Imageslider";
-import { SliderData } from "./components/SliderData";
-
+import Todo from "./todos/Todo";
+// import ImageSlider from "./components/Imageslider";
+// import { SliderData } from "./components/SliderData";
 
 // import Cal from './components/Cal'
 // import Photo from './components/Photo'
@@ -13,8 +13,8 @@ const App = () => {
       {/* <Counter/> */}
       {/* <Cal/> */}
       {/* <Photo/> */}
-      <ImageSlider slides={SliderData}/>
-     
+      {/* <ImageSlider slides={SliderData}/> */}
+      <Todo />
     </div>
   );
 };
