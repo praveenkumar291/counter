@@ -28,7 +28,7 @@ const Photo = () => {
 
     count > 0 ? setCount(count - 1) : setCount(data.length - 1);
   };
-  
+
   return (
     <div
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
@@ -40,6 +40,7 @@ const Photo = () => {
         </button>
         {data.map((item, i) => (
           <button
+            className={count === i && "active"}
             style={{ padding: "5px", margin: "10px" }}
             onClick={() => setCount(i)}
           >
