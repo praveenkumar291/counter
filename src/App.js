@@ -1,5 +1,5 @@
 import React from "react";
-import Test from "./form/Test";
+// import Test from "./form/Test";
 // import FavFood from "./food/FavFood";
 // import Todo from "./todos/Todo";
 // import ImageSlider from "./components/Imageslider";
@@ -20,7 +20,7 @@ const App = () => {
       {/* <Todo /> */}
       {/* <FavFood/> */}
       {/* <UserName /> */}
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 };
